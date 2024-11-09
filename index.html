@@ -4,9 +4,36 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <title>ลงทะเบียนสมัครสมาชิก</title>
 </head>
 
 <body>
+    <h1>ลงทะเบียนสมัครสมาชิก</h1>
+    <p>กรุณากรอกข้อมูลให้ครบถ้วน และตรวจสอบความถูกต้องของข้อมูล</p>
+    <form>
+        <fieldset>
+            <legend><h3>ข้อมูลส่วนตัว (Personal Information)</h3></legend>
+            <label for="firstThai">ชื่อจริง (ไม่ต้องใส่คำนำหน้า) : <span style="color: red;">*</span></label>
+            <input type="text" placeholder="จิณณพัต" id="firstThai" name="firstThai" required><br>
+        
+            <label for="lastThai">นามสกุล : <span style="color: red;">*</span></label>
+            <input type="text" placeholder="ธงสุวรรณ" id="lastThai" name="lastThai" required><br><br>
+        
+            <label for="firstEng">First Name (English): <span style="color: red;">*</span></label>
+            <input type="text" placeholder="Jinnaphat" id="firstEng" name="firstEng" required><br>
+        
+            <label for="lastEng">Last Name (English): <span style="color: red;">*</span></label>
+            <input type="text" placeholder="Thongsuwan" id="lastEng" name="lastEng" required><br><br>
+
+            <label for="gender">Gender: <span style="color: red;">*</span></label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>เพศของคุณ (Select your gender)</option>
+                <option value="male">ชาย (Male)</option>
+                <option value="female">หญิง (Female)</option>
+                <option value="other">อื่น ๆ หรือไม่ต้องการระบุ (Other)</option>
+            </select>
+        </fieldset>
+    </form>
 </body>
 
 </html>
