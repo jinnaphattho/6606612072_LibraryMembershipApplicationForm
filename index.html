@@ -17,15 +17,15 @@
             <input type="text" placeholder="จิณณพัต" id="firstThai" name="firstThai" required><br>
         
             <label for="lastThai">นามสกุล : <span style="color: red;">*</span></label>
-            <input type="text" placeholder="ธงสุวรรณ" id="lastThai" name="lastThai" required><br><br>
+            <input type="text" placeholder="ธงสุวรรณ" id="lastThai" name="lastThai" required><br>
         
-            <label for="firstEng">First Name (English): <span style="color: red;">*</span></label>
+            <label for="firstEng">First Name (English) : <span style="color: red;">*</span></label>
             <input type="text" placeholder="Jinnaphat" id="firstEng" name="firstEng" required><br>
         
-            <label for="lastEng">Last Name (English): <span style="color: red;">*</span></label>
-            <input type="text" placeholder="Thongsuwan" id="lastEng" name="lastEng" required><br><br>
+            <label for="lastEng">Last Name (English) : <span style="color: red;">*</span></label>
+            <input type="text" placeholder="Thongsuwan" id="lastEng" name="lastEng" required><br>
 
-            <label for="gender">Gender: <span style="color: red;">*</span></label>
+            <label for="gender">เพศ (Gender) : <span style="color: red;">*</span></label>
             <select id="gender" name="gender" required>
                 <option value="" disabled selected>เพศของคุณ (Select your gender)</option>
                 <option value="male">ชาย (Male)</option>
@@ -33,6 +33,76 @@
                 <option value="other">อื่น ๆ หรือไม่ต้องการระบุ (Other)</option>
             </select>
         </fieldset>
+        
+        <fieldset>
+            <legend><h3>ข้อมูลนักศึกษา (Student Information)</h3></legend>
+
+            <label for="ID">รหัสนักศึกษา (Student ID) : <span style="color: red;">*</span></label>
+            <input type="text" placeholder="6606612072" id="ID" name="ID" maxlength="10" required><br>
+        
+            <label for="faculty">คณะ (Faculty) : <span style="color: red;">*</span></label>
+            <select id="faculty" name="faculty" required>
+                <option value="" disabled selected>คณะของคุณ (Select your faculty)</option>
+                <option value="วิทยาศาสตร์และเทคโนโลยี">วิทยาศาสตร์และเทคโนโลยี</option>
+                <option value="นิติศาสตร์">นิติศาสตร์</option>
+                <option value="พาณิชยศาสตร์และการบัญชี">พาณิชยศาสตร์และการบัญชี</option>
+                <option value="รัฐศาสตร์">รัฐศาสตร์</option>
+                <option value="เศรษฐศาสตร์">เศรษฐศาสตร์</option>
+                <option value="สังคมสงเคราะห์ศาสตร์">สังคมสงเคราะห์ศาสตร์</option>
+                <option value="สังคมวิทยาและมานุษยวิทยา">สังคมวิทยาและมานุษยวิทยา</option>
+                <option value="ศิลปศาสตร์">ศิลปศาสตร์</option>
+                <option value="วารสารศาสตร์และสื่อสารมวลชน">วารสารศาสตร์และสื่อสารมวลชน</option>
+                <option value="วิศวกรรมศาสตร์">วิศวกรรมศาสตร์</option>
+                <option value="สถาปัตยกรรมศาสตร์และการผังเมือง">สถาปัตยกรรมศาสตร์และการผังเมือง</option>
+                <option value="ศิลปกรรมศาสตร์">ศิลปกรรมศาสตร์</option>
+                <option value="แพทยศาสตร์">แพทยศาสตร์</option>
+                <option value="สหเวชศาสตร์">สหเวชศาสตร์</option>
+                <option value="ทันตแพทยศาสตร์">ทันตแพทยศาสตร์</option>
+                <option value="พยาบาลศาสตร์">พยาบาลศาสตร์</option>
+                <option value="สาธารณสุขศาสตร์">สาธารณสุขศาสตร์</option>
+                <option value="เภสัชศาสตร์">เภสัชศาสตร์</option>
+                <option value="วิทยาการเรียนรู้และศึกษาศาสตร์">วิทยาการเรียนรู้และศึกษาศาสตร์</option>
+            </select><br>
+        
+            <label for="email">ที่อยู่อีเมล (E-mail Address) : <span style="color: red;">*</span></label>
+            <input type="email" placeholder="jinnaphat.tho@dome.tu.ac. th" id="email" name="email" required><br>
+
+            <label for="date">วันเดือนปีเกิด (Date of Birth) : <span style="color: red;">*</span></label>
+            <input type="date" id="date" name="date" required><br>
+        
+
+            <label>ประเภทของหนังสือที่สนใจ : </label>
+            <div>
+                <input type="checkbox" id="fiction" name="bookInterest" value="Fiction">
+                <label for="fiction">Fiction</label>
+            
+                <input type="checkbox" id="nonFiction" name="bookInterest" value="Non-Fiction">
+                <label for="nonFiction">Non-Fiction</label>
+            
+                <input type="checkbox" id="science" name="bookInterest" value="Science">
+                <label for="science">Science</label>
+            
+                <input type="checkbox" id="history" name="bookInterest" value="History">
+                <label for="history">History</label>
+            
+                <input type="checkbox" id="technology" name="bookInterest" value="Technology">
+                <label for="technology">Technology</label>
+            
+                <input type="checkbox" id="other" name="bookInterest" value="Other">
+                <label for="other">Other</label>
+            </div>
+
+        </fieldset>
+        <br>
+        <label for="news">ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่ :</label><br>
+            <input type="radio" id="yesNews" name="news" value="Yes" required>
+            <label for="yesNews">ต้องการ (Yes)</label>
+        
+            <input type="radio" id="noNews" name="news" value="No" required>
+            <label for="noNews">ไม่ต้องการ (No)</label><br><br>
+
+        <button type="submit">ยืนยัน (Submit)</button>
+
     </form>
 </body>
 
